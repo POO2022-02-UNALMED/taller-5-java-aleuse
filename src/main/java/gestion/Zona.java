@@ -4,17 +4,17 @@ import zooAnimales.Animal;
 
 public class Zona {
 	private String nombre;
-	private ArrayList<Zoologico> zoo;
-	private ArrayList<Animal> animales;
+	private ArrayList<Zoologico> zoo = new ArrayList<>();;
+	private ArrayList<Animal> animales = new ArrayList<>();;
 	
 	//Constructores
 	public Zona() {
+		this.setNombre(null);
 	}
 	
-	public Zona(String nombre, ArrayList<Zoologico> zoo, ArrayList<Animal> animales) {
+	public Zona(String nombre, ArrayList<Zoologico> zoo) {
 		this.setNombre(nombre);
 		this.setZoo(zoo);
-		this.setAnimales(animales);
 	}
 	
 	//Getters y Setters

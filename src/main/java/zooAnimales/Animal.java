@@ -14,7 +14,7 @@ public class Animal {
 		totalAnimales++;
 	}
 	
-	public Animal(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		totalAnimales++;
 	}
 	
@@ -73,7 +73,7 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public String totalPorTipo() {
+	public static String totalPorTipo() {
 		return "Mamiferos: " + Mamifero.getListado().size() + "\n" + 
 				"Aves: " + Ave.getListado().size() + "\n" + 
 				"Reptiles: "+ Reptil.getListado().size() + "\n" + 
